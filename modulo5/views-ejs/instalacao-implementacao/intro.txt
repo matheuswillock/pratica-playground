@@ -1,0 +1,23 @@
+Agora que entendemos o que é um mecanismo de modelos e as vantagens de trabalhar com um dentro de nossos projetos, vamos nos aprofundar um pouco mais sobre e entender como é simples o processo de instalação e implementação do mesmo.
+
+Um par de linhas no console, e outro par de linhas nos arquivos Javascript e pronto: tudo estará funcionando!
+
+
+instalação
+
+- npm install ejs (dentro da pasta do projeto) 
+
+app.js 
+    - app.set();
+    permite definir o template engine
+
+    - app.set('view engine', 'ejs')
+    todos os documentos ejs devem estar dentro de uma pasta chamada views.
+
+    app.set('views' + __dirname + 'ejs-html')
+
+
+* Você precisa configurar o express para que conheça o template que você usará.
+
+* express --view=ejs myapp
+    (linha de comando que vai criar o projeto express já com o template ejs configurado) 

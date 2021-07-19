@@ -1,0 +1,1 @@
+let pessoa = ["Matheus", 23, 1.80, false, ["Música", 'café']]

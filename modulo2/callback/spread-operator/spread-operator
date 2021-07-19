@@ -1,0 +1,41 @@
+Vamos compreender o funcionamento do spread operator. Mas, para que ele serve? Ele nos possibilita combinar os valores de um array com os de um outro array.
+
+let frutasUm ['banana', 'pera', 'maça']
+let frutasDois = ['pêssego', 'ameixa' 'laranja']
+
+desejamos incluir todos os conteúdos das duas arrays, como faríamos? Poderíamos realizar um for ou for of
+mas para simplificar utilizaremos um Spreading.
+
+//Spreading
+let todas as frutas = [...frutasUm, ...frutasDois]
+
+- também funciona em objetos literais e functions
+
+let curso = {
+    curso: 'Fullstack',
+    turno: 'Manha',
+    sede: 'Sp'
+}
+
+let estudanteUm {
+    nome: 'Nami',
+    email: 'namizo@email.com',
+    ...curso
+}
+
+let estudanteDois {
+    nome: 'Robin',
+    email: 'robin@email.com',
+    ...curso
+}
+
+
+function comVariosParametros(...params) {
+    //código a ser executado
+
+    //Todos os valores que serão passados como parâmetros, os mesmo serão passados em formato de array dentro da function
+}
+
+comVariosParametros('a')
+comVariosParametros('a', 'b')
+comVariosParametros('a', 'b', 'c')

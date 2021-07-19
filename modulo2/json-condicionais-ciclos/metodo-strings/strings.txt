@@ -1,0 +1,12 @@
+Antes de nos aprofundarmos nos métodos de string, lembre-se de que, em JavaScript, uma string nada mais é do que um array de caracteres. Aquelas sequências de texto que parecem simples, mas com alto potencial. No vídeo a seguir, você verá que pode fazer muito mais com uma string do que gerar textos. 
+
+Para o js uma string é um objeto
+
+ Propriedades:
+    - length;
+    - indexOf;
+    - slice;
+    - trim;
+    - split;
+    - replace;
+    

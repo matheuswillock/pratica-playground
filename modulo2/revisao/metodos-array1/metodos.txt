@@ -1,0 +1,16 @@
+Métodos de Arrays
+
+Agora que sabemos que um array é uma coleção de dados ordenados:
+
+    Como podemos manipular os dados em um array? E se, por exemplo, quisermos adicionar ou extrair dados para outro array existente?
+
+Os arrays em JS têm muitas funções chamadas métodos, que nos permitem modificar ou reutilizar os valores em um array.
+
+Métodos:
+
+    - Pop para retirar elementos do final da array.
+    - Push para inserir elementos no final da Array.
+    - Shift para retirar elementos do início da array.
+    - Unshift para inserir elementos no início da array.
+    - indexOf e lastIndexOf para perguntar o índice de ocorrência de elemento de dentro de uma array.
+    - Join para unir todos os elementos presentes em uma array.

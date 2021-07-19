@@ -1,0 +1,23 @@
+Primeira view
+
+Você se lembra como funciona o fluxo MVC? Vamos revisar um pouquinho…
+
+As views se comunicam com os controllers e recebem a informação por eles, recebida das models.
+
+Para poder mostrar uma view no navegador, é importante declarar ao controller qual é a view que desejamos enviar. Esse processo é conhecido como renderização da view.
+
+Agora que repassamos um pouco esses conceitos, vamos então aprender como um controller pode renderizar determinada view.
+
+a função que lida com solicitação de visualização recebe dois parâmetros:
+
+* req
+* res
+
+const controller = {
+    mostrarProdutos : (req, res) => {
+        // render a view
+        res.render()
+    }
+}
+
+o ejs utiliza os mesmos recursos e mesmas tags do html.

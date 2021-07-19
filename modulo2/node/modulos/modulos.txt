@@ -1,0 +1,7 @@
+Bloco de código reutilizável.
+
+    - São estruturas de código que, juntas, constituem a totalidade de nossa aplicação e configuram sua usabilidade.
+
+como usar módulos dentro do nosso app
+    - Criamos um arquivo de ponto de entrada (entry point)
+        - este arquivo tem extensão .js

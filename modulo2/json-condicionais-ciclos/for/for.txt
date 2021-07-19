@@ -1,0 +1,21 @@
+Nós humanos somos maravilhosos! Criamos coisas fantásticas do nada. Entre tantas maravilhas, sentimos o que nos rodeia e agimos com base nesses sentidos. Mas, se existe algo que os humanos não são bons é em realizar tarefas repetitivas. Para isso, criamos as máquinas! Em nosso caso específico, programamos máquinas. E quando se trata de mandar uma máquina repetir uma ação, temos uma estrutura imbatível: o for!
+
+A comunicação entre seres humanos e máquinas nem sempre é muito fácil. Podemos entender que programar é a forma que nós, seres pensantes, temos para dizer a uma máquina o que ela deve fazer. Pois bem, para que ela entenda a nossa intenção, precisamos ser diretos, explicando só e exatamente o que ela precisa fazer. No caso, para descrever uma repetição utilizamos três informações:
+
+    - De onde começar;
+    - O tamanho do passo;
+    - A condição de parada.
+
+Sim! Podemos fazer uma analogia com uma caminhada sobre uma linha de números! Cada passo na linha representa uma repetição. Se quisermos dizer para a máquina que ela deve sair do número 0 ao número 20 andando de 1 em 1, temos as seguintes informações:
+
+- De onde começar: 0;
+- Tamanho do passo: 1;
+- Condição de parada: posição deve ser menor que 21.
+Em Javascript, ficaria assim:
+
+    for (let 1 = 0; i < 21; i++) {
+        // código a ser executado.
+    }
+
+No trecho de código acima, let i = 0 estabelece o valor inicial da variável i (no caso, zero). Essa variável existe para marcar a posição na caminhada. O trecho i < 21 define a condição de parada. Enquanto i for menor que 21, as ações a repetir serão realizadas e mais um passo na linha dos números será dado. Por fim, i = i + 1 determina o tamanho do passo: no caso 1. 
+

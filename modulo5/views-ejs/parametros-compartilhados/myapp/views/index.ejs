@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>title </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1> Tripulação: <%= tripulacao %></h1>
+
+    <strong>Membros:</strong>
+
+    <ul>     
+
+      <% for(i = 0; i < membros.length; i++) { %>
+        <li> <%= membros[i] %> </li> 
+      <% } %> 
+      
+    </ul>
+
+    <strong>navios:</strong>
+
+    <ul>     
+
+      <% for(i = 0; i < navios.length; i++) { %>
+        <li> <%= navios[i] %> </li> 
+      <% } %> 
+      
+    </ul>
+
+    <strong>aliados:</strong>
+
+    <ul>     
+
+      <% for(i = 0; i < aliados.length; i++) { %>
+        <li>  <%= aliados[i] %>  </li> 
+      <% } %> 
+      
+    </ul>
+
+    <strong>frota:</strong>
+
+    <ul>     
+
+      <% for(i = 0; i < frota.length; i++) { %>
+        <li> <%= frota[i] %> </li> 
+      <% } %> 
+      
+    </ul>
+  </body>
+</html>

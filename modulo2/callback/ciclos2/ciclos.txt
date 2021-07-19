@@ -1,0 +1,38 @@
+Em uma de nossas primeiras aulas, mostramos que os ciclos nos permitem repetir instruções de maneira simples. Podemos repeti-los por uma determinada quantidade de vezes ou enquanto se cumpre uma certa condição. Agora, vamos descobrir novas formas de como utilizar for, além das que já conhecemos, com o uso do for…in e for…of.
+
+- for in
+    Só itera em objetos literais.
+
+    let pessoa = {
+        nome: "Shanks",
+        idade: 42,
+        posição: "Yonkou"
+    }
+
+    for (let caracteristica in pessoa) {
+        console.log(pessoa[caracteristica])
+    }
+
+- for of 
+    utilizamos para iterar sob arrays.
+
+let series = ['Friends', 'Game Of Thrones', 'Breaking Bad'];
+
+for(let umaSerie of series) {
+    console.log(umaSerie);
+}
+
+// Friends 
+// Game Of Thrones 
+// Breaking Bad
+
+                                FOR IN                   FOR OF
+            Aplicar a  Propriedades Enumerável  Objetos Literais
+
+- Eu uso com objetos?            SIM                      NÃO
+
+- Eu uso com matrizes?           NÃO                      SIM
+
+- Eu uso com strings?            NÃO                      SIM
+
+Bom de usar quando sabemos que precisamos percorrer toda a array.

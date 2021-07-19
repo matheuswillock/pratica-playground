@@ -1,0 +1,14 @@
+Como vimos anteriormente, uma função é um bloco de código que podemos utilizar quantas vezes for necessário. Isso porque, com elas, você pode executar uma tarefa específica ou uma que retorne um valor.
+
+“Ok, isso eu já tinha entendido na classe anterior. Por que estamos falando disso novamente?”.
+
+Voltamos no assunto por ser um dos conceitos que será mais utilizado dentro do mundo da programação. Dentro deste contexto, é importante conhecermos as arrow functions, que nos permitem escrever funções com uma sintaxe mais compacta que o modelo que estamos acostumados.
+
+Agora vamos ver como essas funções funcionam.
+
+    - Não precisa mais usar a palavra reservada function.
+    - Sempre são anônimas.
+    - Se quisermos nomear guardamos elas dentro de uma variável.
+        - operador flecha
+            let soma = (a, b) => a + b;
+            let dobro = num => num * 2;

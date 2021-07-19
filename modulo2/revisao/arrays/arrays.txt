@@ -1,0 +1,5 @@
+ Como podemos agrupar muitas informações em uma única variável? Para isso, temos um tipo de dado um pouco mais estruturado, denominado array, também conhecido como lista.
+
+Sempre que tiver um grupo de informações para guardar, utilize Array. Vamos ao exemplo: para guardar uma lista de hobbies favoritos, podemos criar uma variável hobbiesFavoritos e atribuir um array, separando os itens com vírgulas: 
+
+    let hobbiesFavoritos = [‘Leitura’, ‘Games’, ‘Arco e flecha’, ‘Cozinhas’]

@@ -1,0 +1,4 @@
+Uma das melhores funcionalidades de uma view, é que temos a possibilidade de consumir informações que sejam fornecidas diretamente pelo controlador.
+
+A esta funcionalidade damos o nome de parâmetros compartilhados. Basicamente, a partir do controlador, podemos compartilhar com a view qualquer tipo de dado existente no JavaScript. Objetos, arrays e funções. Sim, você leu bem: até funções podem ser compartilhadas do controlador para a view.
+

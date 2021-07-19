@@ -1,0 +1,24 @@
+Até o momento, vimos como um servidor web pode atender às mais diversas requisições de um cliente e responder às mesmas.
+
+No entanto, seria ideal poder enviar ao cliente um conteúdo suficientemente bem estruturado para que a pessoa que usa nosso sistema saiba como interagir com o mesmo.
+
+Neste capítulo, vamos aprender como enviar arquivos diretamente do servidor para o navegador. Tendo em vista que é importante que o arquivo enviado como resposta seja de um tipo que o navegador consiga interpretar - por exemplo: uma imagem, um PDF ou um arquivo em formato HTML.
+
+
+O método sendFile() é parte do objeto de resposta do Express.
+Nos permite enviar facilmente arquivos existentes em nosso servidor como resposta às requisições do cliente.
+
+
+
+Organização das pastas dos nossos projetos: 
+
+Nosso projeto tende a ir crescendo ao longo do desenvolvimento, e é muito importante mantê-lo organizado e dividido de acordo com cada funcionalidade. Tendo em vista a estrutura mínima de pastas que utilizaremos no decorrer deste módulo, vamos organizar ads pastas abaixo.
+
+- Site
+    Node_modules
+    - public
+        - CSS
+        - img
+        - views
+    app.js
+    package.json

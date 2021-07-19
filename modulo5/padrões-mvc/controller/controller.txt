@@ -1,0 +1,50 @@
+O controller é uma espécie de interprete entre as nossas views e models.
+
+- Tem a responsa de responder diferentes solicitações do client.
+- Oferece escalabilidade e maior controle sobre o código.
+
+* Criarmos os controllers:
+    - criamos uma pasta chamada controllers.
+        Para cada um dos recursos do nosso app, parecido com os routers.
+            - produtos;
+            - marcas;
+            - categorias;
+
+* O controller é como um módulo;
+
+* É básicamente um objeto literal;
+    - Possui vários métodos;
+    - Cada método responde uma solicitação específica.
+        métodos:
+            - criar produtos;
+            - Excluir produtos;
+            - mostrar produto;
+    - Devemos criar um arquivo chamado produtosController;
+        - Criar uma variável por exemplo controlador;
+            const controlador = {};
+        - Exportamos o módulo;
+            module.exports = controlador;
+    * Dessa forma podemos criar dentro do nosso objeto vários métodos, um para cada request.
+        - Os nomes dos métodos devem ter nomes lógicos e descritivos.
+            const controlador = {
+                index: '...'
+            };
+        - O valor dos métodos serão uma função.
+            // Trazemos as funções callbacks que tínhamos lá nas rotas.
+            const controlador = {
+                index: (req, res) => {
+                    res.send('Index do produto')
+                }
+            };
+
+            module.exports = controlador;
+
+* Teremos a lógica de tudo o que deve acontecer quando o client entrar em uma determinada página, dentro de um determinado objeto, dentro de um determinado método.
+
+* Como fica a rota agora?
+- Solicitar o arquivo do nosso controller.js dentro de uma variável.
+    const produtosController = require('./controllers/produtosController')
+- Na rota em que retiramos o callback. Nomeie a variável na qual estamos salvando o controlador.
+    * Como é um objeto literal vamos acessar o método específico que desejamos executar quando for acessada. Não precisamos colocar o parenteses depois do método.
+
+        router.get('/', produtosController.index);

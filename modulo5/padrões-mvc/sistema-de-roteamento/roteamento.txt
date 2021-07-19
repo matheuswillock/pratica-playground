@@ -1,0 +1,55 @@
+
+
+Toda aplicação que busque ser escalável, precisa ter componentes modularizados. E as rotas não ficam de fora deste processo. Por isso, quando encaramos a implementação das rotas que terá nossa aplicação web, é conveniente pensar em pequenas "entidades" de funcionamento, mais que numa estrutura "monolítica".
+
+Para esse objetivo, o Express nos dá a possibilidade de criar diferentes arquivos que administrem as possíveis rotas de nosso site. Sempre tenha em mente que o importante, nesta "atomização", é a organização de nossos arquivos dentro de nosso projeto. Tudo com o objetivo de manter mais estável nosso desenvolvimento.
+
+Desta forma, podemos concluir, então, que o sistema de roteamento dentro de um projeto de Express não é nada além de uma modularização das rotas de nossa aplicação, para que as mesmas permaneçam divididas e organizadas, dependendo de suas funcionalidades.
+
+* Recomendado:
+    - Criar uma pasta chamada routes
+        Que vai salvar um arquivo .js para cada recurso que desejamos gerenciar.
+        exemplo: 
+        Arquivo produtos.js. Gerenciamento de todas as rotas envolvendo produtos.
+
+Básicamente esses arquivos criados dentro do routes, será um módulo que vamos exportar para o nosso arquivo entry-point. (app.js)
+
+* Dentro das pastas de gerenciamento de rotas temos que fazer duas coisas.
+
+    - Exportar o módulo express
+        const express = require('express');
+    - Criar uma variável chamada router
+        const router = express.Router(); 
+            // Que salvará a execução do método express Router.
+
+* O que é o Router?
+    - Permite que criemos rotas montáveis e desmontáveis.
+    - Assim podemos modularizar todo o nosso sistema de roteamento.
+
+* Para cara rota que criarmos dentro de um gerenciador de rota, temos a seguinte estrutura:
+
+// Inicio - Todos
+router.get('/', function(req, res){
+    // código
+}) 
+
+// Detalhe - Um produto
+router.get('/detalhe/:id', function(req, res) {
+    // código
+})
+
+// criar / Formulário
+router.get('/criar', function(req, res) {
+    // código
+})
+
+para exportar um módulo
+module.export = arquivo-criado
+
+* Dentro do entry-point
+
+const express = require('express')
+const app = express.Router();
+const rutasProductos = require('./routes/produtos');
+
+app.use('/produtos', rotasProdutos);

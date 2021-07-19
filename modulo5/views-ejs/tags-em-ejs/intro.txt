@@ -1,0 +1,14 @@
+Bom. Se chegamos até aqui, já sabemos o que é EJS, como instalá-lo em nosso projeto e como se dá o processo de renderização das vistas. Mas se o EJS parece ser a mesma coisa que o HTML, por que decidimos usar EJS então?
+
+É chegada a hora de descobrir o incrível potencial que o EJS tem e o porquê. Seguramente, de agora em diante, não irá querer voltar ao HTML básico e tradicional. No vídeo a seguir, veremos as tags próprias de EJS.
+
+Estas tags são um conjunto de funcionalidades que vão nos permitir fazer coisas como uma iteração de um array dentro de um bloco de código HTML. Surpreendente, não?
+
+Não vamos perder mais tempo, vamos ver como podemos, então, alcançar estes magníficos resultados.
+
+Arquivos ejs suportam qualquer tag HTML comum.
+
+- <% %>
+    Permite que implementamos qualquer fluxo javascript (if, for, ...)
+
+- <%= %>

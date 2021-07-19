@@ -1,0 +1,29 @@
+Desestruturação // Alocação por Desestruturação
+
+Mas o que seria desestruturação? Se procurarmos sua definição, vamos encontrar: A sintaxe de atribuição por desestruturação é uma expressão que permite a extração de dados, tanto de arrays como de propriedades de objetos, em diferentes variáveis.
+
+- Extrair Array
+let cores = ['Roxo', 'Azul', 'Amarelo']
+let azul = cores[1]
+
+- O JS vai criar as variáveis mencionadas e cada uma delas receberá um valor correspondente.
+- A alocação não modifica e nem altera o array de origem.
+
+- Extrair dados de um objetos
+let carro = {
+    marca: 'Ford',
+    ano: 1998;
+}
+let marcaCarro = carro.marca
+
+A desestruturação não modifica o array ou o objeto literal de origem. Seu único objetivo é copiar os valores de forma mais prática e rápida.
+
+A desestruturação serve para evitar de que criemos variáveis para depois atribuir os devidos valores as mesmas.
+
+É uma técnica muito usado no express e reactjs
+
+quando não quisermos extrair um item no meio de uma array basta dar um espaço com vírgula.
+
+let destinosIncriveis = ['Marrocos', 'Bariloche', 'Barcelona', 'China', 'Grecia']
+
+const [item1, , item3]

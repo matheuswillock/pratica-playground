@@ -1,0 +1,41 @@
+Express-generator, como seu próprio nome sugere, é um gerador de projetos Express. E o que isso significa? Basicamente que, a partir de um único comando, é possível gerar uma série de arquivos e uma estrutura correspondente de pastas pronta para usar.
+
+Eventualmente, dependendo da complexidade do projeto e do design pattern que estivermos usando (como o MVC, por exemplo), teremos que criar algumas pastas adicionais. Mas, com certeza, aderir o express-generator otimizará, e muito, o nosso tempo.
+
+* install express-generator
+    - npm i express-generator -g;
+
+* criar um projeto
+    - express myApp --ejs
+    Estamos instalando um mecanismo de exibição.
+
+* Dentro da pasta express myApp executamos:
+    - npm install
+    Que irá instalar todas as dependências necessárias do projeto.
+
+* Estrutura dentro da pasta myApp:
+
+    - app.js
+    - package.json
+    - bin
+        - wwww
+    - public
+        - images
+        - javascript
+        - stylesheets
+            - style.css
+    - routes
+        - index.js
+        - users.js
+    - views
+        - error.js
+        - index.js
+
+* Como executar 
+    - Ainda no terminal e no mesmo local do projeto.
+        - nodemon bin/www
+            * Vamos permitir que haja atualização em tempo real de desenvolvimento.
+            * Com o bin solicitamos que o arquivo seja executado. Já que este ultimo arquivo está responsável por colocar o nosso sistema em operação.
+    - Acessar no navegador:
+        - http://localhost:3000
+

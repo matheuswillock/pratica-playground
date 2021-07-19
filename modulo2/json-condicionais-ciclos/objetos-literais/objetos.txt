@@ -1,0 +1,18 @@
+Variáveis podem guardar informações. Isso por si só já é muito bom! 
+Vimos que os arrays podem guardar vários valores posicionados em uma determinada ordem. Agora, vamos ver uma estrutura poderosa e simples do JavaScript. São os objetos literais. Pense que eles vão servir para organizar as informações ou funções de uma forma muito intuitiva.
+
+Conjunto de propriedades e valores.
+
+let meuPais = {
+    nome:"Brasil",
+    populacao: 202768562,
+    capital: "Brasília"
+}
+
+para acessar a as propriedades 
+    - DOT NOTATION
+        - Objeto literal que quer acessar
+        - Implementar um ponto
+        - propriedade
+ "A capital do Brasil é Brasília"
+    console.log('A capital do ' + meuPais.nome + ' é ' + meuPais.capital)

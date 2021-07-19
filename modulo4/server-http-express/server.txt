@@ -1,0 +1,17 @@
+Ponto de partida
+
+Vamos ver como, com poucas e concisas linhas de código, podemos levantar nosso servidor web com Express.
+
+    Uma das tantas funcionalidades que está na lista do Express é a possibilidade de levantar um servidor de forma muito simples e em poucos passos.
+
+para levantar um servidor 
+
+    app.listen()
+
+const express = require('express');
+
+const app = express();
+
+app.listen(3000, () => {
+    console.log('Servidor rodando')
+})

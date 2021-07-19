@@ -1,0 +1,24 @@
+Introdução ao Roteamento e Resposta
+
+Quando criamos um servidor é necessário configurar o que tradicionalmente conhecemos como um sistema de roteamento, o route system. Este nos permite definir a resposta que vamos dar, dependendo da rota que o visitante está acessando.
+
+Para colocar este conceito em um cenário mais concreto, podemos dizer que o sistema de roteamento é como o porteiro de um edifício de consultórios médicos, o qual sabe com exatidão quem são as pessoas que atendem em cada consultório. Desta forma, cada vez que alguém chega para perguntar sobre alguma especialidade médica, esse sabe para onde deve dirigir a pessoa.
+
+Ok, mas o que acontece às pessoas que chegam ao consultório? Para isto precisamos falar sobre Response.
+
+Chamamos de Response a resposta que se obtém do site uma vez que o sistema de roteamento te envia para a rota requisitada. Esta resposta pode ser de diferentes tipos pois poderia te devolver apenas texto plano, texto em formato HTML, entregar um documento PDF, um arquivo de imagem ou qualquer formato que o navegador possa interpretar.
+
+app.METHOD(PATH, HANDLER);
+    - app => guarda a execução do express;
+    - METHOD => MÉTODO http (get, post, put)
+    - PATH => string; que se refere a própria rota em si.
+    - HANDLER => function a ser executada. O que acontece quando a rota é acessada.
+
+app.get('/', function(req, res) {
+    res.send('Seção Inicial - Bem vindo!');
+});
+
+app.get("/contact", function(req, res) {
+    res.send('Seção de contato')
+});
+

@@ -1,0 +1,29 @@
+Como vimos em variaveis, o JavaScript lida com diferentes tipos de dados que são muito importantes e que vale a pena termos em mente.
+
+Por isso, vamos dedicar um tempo para analisá-los, pois eles serão fundamentais a partir de agora. Cada tipo de dado tem suas próprias características e particularidades que lhes permitem definir um contexto correto dentro do qual ele pode ser utilizado.
+
+Quais são as boas práticas na escrita de códigos e por que elas são importantes?
+
+Vamos imaginar por um segundo que quando você compra um aparelho, ele não vem com seu guia de instruções e manual do usuário. Dentro deste cenário, é provável que aqueles que não estão familiarizados com seu funcionamento se sintam um pouco frustrados e confusos, pois sentirão que não podem fazer pleno uso do produto.
+
+Algo semelhante acontece na programação, porque algo fundamental no processo de escrever código é levar em conta que, em algum momento, outras pessoas vão interagir com o código que estamos escrevendo. É por isso que é importante ter uma série de diretrizes e parâmetros que nos permitam ler o código de qualquer outra pessoa da maneira mais simples e compreensível.
+
+Por causa disso, as boas práticas de escrita são uma parte fundamental do processo de programação. Elas nos permitem gerar um contexto dentro do qual nós e todos que interagem com o código podemos facilmente entender o propósito para o qual ele foi criado. 
+
+    - Uma das boas práticas é o uso do feedback. Isto nos permite gerar uma pequena história do porquê de você estar criando estes blocos de código. 
+
+    - Um comentário é uma característica da linguagem de programação que se destina a inserir anotações descritivas a respeito do código escrito e se destina a qualquer pessoa que se relacione com esse código. 
+
+    - Estas anotações são ignoradas pelos compiladores e intérpretes de código e são destinadas apenas a pessoas. Seu propósito é tornar o código mais fácil de entender, tendo em mente a manutenção ou a sua reutilização futura. 
+
+
+Tipos de dados
+    - number
+    - strings
+    - boolean
+    - null
+    - undefined
+    - objetos
+    - arrays
+
+O índice sempre começa no 0.

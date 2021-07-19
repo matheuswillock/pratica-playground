@@ -1,0 +1,23 @@
+Você já notou que alguns sites mostram a data e a hora do momento exato em que o visitamos. Mas como é possível fazer isso? Será preciso fazer download de alguma aplicação? Nada disso! O Javascript tem, nativamente, uma maneira de acessar essas informações pelo objeto date.
+
+Para continuarmos, é importante lembrarmos que um objeto é a representação em código de um elemento da vida real, assim sendo conseguimos informações detalhadas além de um simples horário, tais como: mês, ano, milissegundos. 
+
+A contagem sempre começa do 0.
+
+Objeto Date:
+    -primeiro devemos criar uma instância
+let dataAtual = new Date();
+
+    - getDay()
+    - getDate()
+    - getMonth()
+    - getFullYear()
+
+// Data específica
+let meuAniversario = new Date(1997, 10, 07);
+
+meuAniversario.getDate(); //07
+meuAniversario.getMonth(); //10 (novembro)
+meuAniversario.getDay(); // 5 (sexta-feira)
+meuAniversario.getFullYear(); 1997
+

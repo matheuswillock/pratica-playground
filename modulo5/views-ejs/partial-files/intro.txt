@@ -1,0 +1,17 @@
+Quando desenvolvemos um site, é bastante comum ter certos elementos visuais que costumam se repetir. Por exemplo, uma barra de navegação ou o rodapé da página são de uso comum e quase sempre são o mesmo em todas as views. Será que o EJS poderia nos dar uma ajudinha com isso?
+
+A resposta para essa pergunta é sim. O EJS nos dá uma forma de modularizar nossa estrutura HTML e gerar blocos de código que se repetem, o quais podem ser facilmente integrados no resto das views.
+
+Isso simplifica muitíssimo o trabalho de desenvolvimento e programação do nosso projeto web.
+
+Então, vamos ver como podemos alcançar esse objetivo.
+
+* O EJS te dá a possibilidade de fazer fazer templates que vão automatizar as views.
+
+<%- include() %>
+
+<%- include('./partials/head') %>
+
+Basicamente o que o mecanismo está fazendo é copiar e colar.
+
+* Desta maneira podemos reutilizar códigos repetidos.

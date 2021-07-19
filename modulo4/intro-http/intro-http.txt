@@ -1,0 +1,41 @@
+Introdução a HTTP
+
+HTTP (Hyper Text Transfer Protocol) -- ou em português: Protocolo de Transferência de Hipertexto -- é um protocolo que serve para gerenciar a comunicação entre duas máquinas conectadas a uma rede, onde uma pede por um conteúdo específico e a outra se encarrega de responder àquela solicitação.
+
+Até aqui, tudo parece simples, não é mesmo? Mas dentro do protocolo tem todo um conjunto de sub regras definidas, que se encarregam de saber como responder ante diferentes pedidos. Pedir a página de login do internet banking ao servidor não é a mesma coisa de acessar diretamente a sua conta bancária. Mesmo que nos dois casos, você esteja fazendo pedidos ao servidor, no segundo se faz necessário implementar mecanismos de autenticação que permitam identificar que não se trata de outra pessoa querendo acessar a sua conta.
+
+Para refletir um pouco antes de assistir o vídeo, deixamos estas perguntas para se ter em mente:
+
+    - Será que o tipo de request ao servidor é o mesmo quando publicamos uma foto em nossa conta do Instagram, e quando queremos ver uma foto de uma conta que não é nossa?
+    - Quando iniciamos uma sessão em nosso e-mail, nossa senha está protegida do momento que sai do nosso computador até chegar ao servidor?
+    - Quando queremos editar só nosso nome no perfil do LinkedIn, a informação que não alteramos se mantém ou é substituída novamente, por mais que seja a mesma?
+    - Qual será a diferença entre ocultar alguma foto de nosso perfil do Facebook e apagá-la?
+
+HTTP:
+
+    - Hyper
+    - Text
+    - Transfer
+    - Protocol
+
+Gerenciamento:
+
+Client <-> Side
+
+URI
+    - URL
+        Endereços de sites
+    - URN
+        Nome exato do protocolo ou do domínio.
+
+Método => ação 
+    - GET:
+        Para solicitar dados
+    - POST:
+        Para enviar dados ao servidor
+    - PUT:
+        Envie dados, substitua todas as informações de um recurso.
+    - PATCH:
+        Envia dados, modifica informação parcial de um recurso.
+    - DELETE:
+        Envia uma solicitação para eliminar um recurso do servidor.

@@ -1,0 +1,27 @@
+Como funciona a web?
+Certamente já nos perguntamos como funciona a web... Já paramos para pensar, pelo menos por um momento, por que quando inserimos o endereço do Facebook ou Instagram na barra de endereços do navegador, vemos o conteúdo dessas páginas e não de outras.
+
+Quando estamos diante do computador, sempre que pedimos uma página ao navegador - digitando seu nome na barra de endereço - estamos fazendo algo comumente conhecido como pedido. Mas para onde vai esse pedido, para onde ele se desloca a partir do momento em que deixa nosso computador?
+
+E quando, como resultado desse pedido, recebemos em nossa tela todo o conteúdo da página web que solicitamos - de forma harmoniosa e organizada - por que as coisas parecem tão boas? Por que estão organizadas de tal forma que é tão fácil para nós consumirmos seu conteúdo?
+
+Pois, bem! Chegou o momento de começar esta aventura pelos caminhos da web e do universo da Internet... Mas, como assim? A internet e a web não são a mesma coisa? Infelizmente temos que lhe dizer que não, eles não são a mesma coisa. Portanto, ao longo deste módulo vamos desvendar os segredos por trás destas tecnologias e, além disso, aprenderemos as principais linguagens que compõem 100% das páginas web. Estamos falando do HTML e CSS, sem deixar de lado, obviamente, as possibilidades que o JavaScript nos dá - mais precisamente o Node.js e o Express - de gerar um serviço local em nosso computador, que nos permite responder às diferentes solicitações que são feitas a partir de um navegador web.
+
+No final deste módulo, você terá o conhecimento e as habilidades para criar um site que seja 100% funcional e que, por sua vez, mantenha uma estética visual adequada e adaptável a diferentes dispositivos móveis existentes. Conseguindo também gerar, em seu próprio computador, um sistema de conexão que serve para consumir o conteúdo da web de uma forma dinâmica e organizada.
+
+Objetivos do módulo
+Esperamos que, ao longo deste módulo, sejamos capazes de:
+Unir o backend ao front end com HTML e CSS.
+Organizar e estruturar o projeto para trabalhar especificamente com as telas (chamadas de views).
+Em relação à utilização do Express:
+Separar os diferentes componentes que compõem um pedido web
+Levantar um servidor
+Realizar pedidos por get
+Vamos nos concentrar principalmente em questões relacionadas a HTML e CSS.
+Fornecendo conteúdo e estrutura a um site através do HTML
+Identificar os componentes que compõem uma página web.
+Categorizar sub-componentes e identificar seus usos.
+Integrar os diferentes componentes para fazer um site.
+Conhecer e traduzir diferentes tags e regras de estilo em um site.
+Estilização e adaptação a diferentes tipos de telas usando CSS:
+Exercício sobre o projeto de design responsivo.

@@ -1,0 +1,7 @@
+Palavras reservadas
+
+- var
+- let
+- const
+
+var telefone = 11988280219

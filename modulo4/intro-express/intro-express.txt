@@ -1,0 +1,11 @@
+Ponto de partida
+
+Agora, vamos ser apresentados ao mundo do Express, para deixar as coisas um pouquinho mais fáceis na hora de trabalhar com HTML e CSS. Posteriormente, avançaremos em aprofundar nossos conhecimentos e ferramentas.
+
+O Express abre um novo mundo, que nos permite que, com pouco código, possamos criar nosso primeiro servidor e fazer com que este possa escalar e ser utilizado em ambiente profissional.
+
+Express é o framework mais utilizado pelo Node, embora... Espera um pouco, o que é um framework?
+
+Um framework é um ambiente de desenvolvimento que resolve internamente uma série de problemas comuns, automatizando assim o desenvolvimento de qualquer aplicação. Os frameworks do Node.js são utilizados, principalmente, por sua produtividade, escalabilidade e velocidade. O Express é um dos mais populares e estáveis, sendo muito utilizado tanto para aplicações web quanto para mobile.
+
+Sempre que formos trabalhar com o express devemos installar em cada um dos projetos que estivermos trabalhando.

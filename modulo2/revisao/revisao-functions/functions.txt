@@ -1,0 +1,22 @@
+As funções no JavaScript nos permitem agrupar um ou vários blocos de código, que podemos reutilizar muitas vezes. 
+
+Todos adoram pizza, mas, se tivéssemos que fazer uma pizza todos os dias? Fazer a massa se tornaria um processo muito cansativo e repetitivo. Diríamos provavelmente "como seria bom ter uma máquina para fazer massa de pizza" e tornar o processo de preparação um pouco mais agradável e rápido.
+
+É sob um contexto semelhante que as funções em JavaScript são utilizadas. Uma função é um bloco de código que definimos uma vez e que podemos executar quantas vezes forem necessárias. Embora possa realizar uma ou mais tarefas específicas, é importante notar que SEMPRE devolverá um único valor (a máquina de massa de pizza é apenas para isso, não para fazer café). 
+
+É importante diferenciar dois momentos:
+
+   1. O momento de definir o que a função fará;
+   2. O momento da execução da função.
+
+Tipos de funções:
+   - Uma função expressa
+      aquela que se atribui como valor a uma variável.
+
+      let somar = function() {...};
+
+   - Declaradas
+      Recebe um nome formal e não se atribui para uma variável. 
+
+      function somar () {...};
+       

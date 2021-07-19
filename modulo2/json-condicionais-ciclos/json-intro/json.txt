@@ -1,0 +1,82 @@
+Na web, a maioria das solicitações e suas respostas viajam como texto simples, ou seja, texto sem codificações especiais. Vamos conhecer uma das maneiras pela qual os sistemas podem ser interconectados. Isso será essencial nas próximas aulas. Vamos começar! 
+
+json => javascript object notation
+
+Objetos nativos:
+    - JSON.parse()
+        Recebe como parâmetro um dado e retorna um array ou um objeto literal, por exemplo:
+            {
+                {
+                    nome: "Brasil",
+                    capital: "Brasília"
+                }
+            }
+        Os dados fornecidos sempre devem ser no formato JSON.
+    - JSON.stringify()
+        Recebe um array ou um objeto literal e retorna uma string do tipo JSON. 
+            let dadosNumObjeto = {
+                nome: "Maria",
+                sobrenome: "Quitéria",
+                país: "Brasil"
+            }
+
+            let dadosConvertidos = JSON.stringify(dadosNumObjeto);
+
+            console.log(dadosConvertidos);
+            {"nome": "Maria", "sobrenome": "Quitéria", "país": "Brasil"}      
+
+
+// Estrutura JSON genérica
+{
+    "propriedade1" : "valor",
+    "propriedade2" : "valor"
+}
+// Exemplo de estrutura JSON simples
+{
+    "id": 1,
+    "nome": "Luke",
+    "sobrenome": "Skywalker",
+    "idade": 19
+}
+// Exemplo de estrutura JSON mais avançada
+{
+    "estados": [
+        {
+            "nome": "Bahia",
+            "sigla": "BA",
+            "capital": {
+	                "nome": "Salvador",
+	                "pop": 2.677.000
+            	     }
+                  },
+	   {
+            "nome": "São Paulo",
+            "sigla": "SP",
+            "capital": {
+	                "nome": "São Paulo",
+	                "pop": 12.180.000
+            	     }
+                  }
+    ],
+    "parametros": {
+		"acao":"1",
+		"log": 15641
+	}
+}
+// Array de elementos em formato JSON
+[
+    {
+        "id": 1,
+        "nome": "Luke",
+        "sobrenome": "Skywalker",
+        "idade": 19,
+   "password":"$2y$10$Hd35v8sCXuej8T5j6yNmgWWJSWJowevq"
+    },
+    {
+        "id": 2,
+        "nome": "Leia",
+        "sobrenome": "Organa",
+        "idade": 19,
+        "password": "$2y$104cpJu59QggCNdterkHjdYn2.ThIPtVKWuiHy"
+    }
+]

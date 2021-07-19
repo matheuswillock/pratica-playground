@@ -1,0 +1,5 @@
+Request:
+    - É o pedido que fazemos através do navegador (cliente) para um servidor. Por exemplo, buscar a página do Google através da URL www.google.com
+
+Response:
+    - É a resposta que o servidor entrega para o cliente depois de receber e processar o pedido. Nesse exemplo, o resultado é a página inicial do Google.

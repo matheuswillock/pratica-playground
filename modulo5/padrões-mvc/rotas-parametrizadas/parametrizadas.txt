@@ -1,0 +1,7 @@
+Imagine que temos 2000 produtos no nosso site e queremos mostrar os detalhes de cada um deles. Para isso, criamos 2000 rotas diferentes, uma para cada produto. Será que isso seria viável? Com certeza não!
+
+Pensando em resolver esse problema, o Express nos permite trabalhar com rotas dinâmicas.
+
+Uma rota dinâmica é aquela que mostra uma informação ou outra dependendo de determinados critérios. Diferente das rotas estáticas, que são aquelas que estávamos trabalhando até o momento.
+
+Veremos as configurações necessárias que devemos implementar para poder dar esse dinamismo às nossas rotas.

@@ -1,0 +1,14 @@
+O que é mecanismo de modelos? O que é um modelo?
+
+Vamos por partes. Um modelo (ou um template) é um arquivo que possui uma estrutura HTML pré-definida, o que nos ajuda a gerar vários outros arquivos a partir desse original.
+
+Por outro lado, um mecanismo de modelos (ou template engine) é aquele que nos permite gerar um template em si mesmo, para que nossa aplicação possa usá-la.
+
+Existem vários templates engines, mas particularmente nessa aula, veremos o EJS, já que seu uso e implementação são realmente bem simples (mas isso não quer dizer que seja menos poderoso).
+
+Outra característica de um template engine é que ele nos permite gerar arquivos dinâmicos, que contenham informação vinda dos controllers.
+
+Graças a essa característica, e com apenas alguns arquivos, vamos poder mostrar toda aquela informação armazenada no nosso banco de dados.
+
+* Permite criar arquivos html dinâmicos;
+* Responsável por gerenciar os modelos

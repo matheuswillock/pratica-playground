@@ -1,0 +1,19 @@
+NPM é um gerenciador de pacotes do Node, que nos permite baixar e instalar diversas bibliotecas para incorporar ao nosso projeto. 
+
+Para iniciar um projeto node 
+    npm init -y
+
+Para instalar uma biblioteca/ pacote
+    npm install PACKAGE --save
+
+quando inicializamos um projeto node (npm init) aparecem no package.json os arquivos abaixo.
+    - name
+    - version 
+    - description
+    - main
+    - scripts
+    - author
+    - license
+
+- npm init para inicializar.
+- npm install para instalar um package.

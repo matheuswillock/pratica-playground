@@ -1,0 +1,15 @@
+ JavaScript nos fornece vários métodos (funções) de arrays, proporcionando uma gama de ferramentas para trabalhar com eles.
+
+Antes de conhecer estes métodos, é necessário entender a definição de callback. Como acabamos de descobrir, as funções podem receber um ou mais parâmetros. Estes podem ser, entre outros: um número, uma string, um booleano ou também outra função. E a estas funções passadas como parâmetro de outra que chamamos de callback.
+
+E por que estamos dizendo tudo isso? Porque, diferente dos primeiros métodos de array que você viu há pouco tempo, esses precisam de callbacks, funções que serão executadas dentro dos métodos de arrays.
+
+// callback
+pai(function () {
+
+})
+
+- map
+- filter
+- reduce
+- forEach

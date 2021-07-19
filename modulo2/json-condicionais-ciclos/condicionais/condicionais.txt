@@ -1,0 +1,42 @@
+O if ternário nã possui chaves
+se escreve na horizontal somente
+
+    condição ? código caso true : código caso false
+
+atribuímos o if ternário a uma variável assim quando quisermos executar, basta chamar a variável.
+
+SWITCH:
+
+Perguntar por algo --> se isso for verdadeiro --> executar um bloco de código.
+
+case: aparece dentro do switch
+switch (expressão) {
+    case1 caso1:
+        console.log("Se cumpra algo");
+    break;
+}
+
+com essa estrutura de case podemos criar quantas condições quisermos.
+
+default: 
+let dia = "domingo";
+
+switch (dia) {
+    
+    case "segunda":
+        console.log("Na segunda, se trabalha");
+    break;
+
+    case "sábado":
+        console.log("Na sábado, se sai");
+    break;
+
+    case "domingo":
+        console.log("No domingo, se come churrasco");
+    break;
+
+    default:
+        console.log("Não é segunda, nem sábado nem domingo");
+    break;
+
+}

@@ -1,0 +1,15 @@
+MVC é um design pattern que nos permite organizar o código e os arquivos de acordo com a sua responsabilidade, em outras palavras, de acordo com a tarefa que devem realizar.
+
+O design pattern é um padrão de desenho que propõe um esquema de trabalho com uma série de regras que nos permitem simplificar o código.
+
+Um dos mais populares é o MVC. O seu objetivo é criar aplicações modulares, dividindo a estrutura do projeto em treŝ componentes principais:
+
+- Models
+- Views
+- Controllers
+
+As Views compõem a interface gráfica.
+
+Os controllers compõem a camada intermediária entre as views e os models.
+
+As models compõem e contém a lógica da aplicação.

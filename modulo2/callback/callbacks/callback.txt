@@ -1,0 +1,29 @@
+Em Javascript, as funções são um tipo de dado e podemos armazená-las dentro de variáveis ou recebê-las como argumento de uma função (como acontece com os dados numéricos, arrays ou qualquer outro). Isso nos permite fazer coisas interessantes e poderosas, podendo aproveitar, por exemplo, o uso de callbacks.
+
+Callbacks permitem passar uma função como parâmetro (argumento) de outra e por consequência executá-la. Mas… você sabe como isso acontece?
+
+O callback é uma função que passa como parâmetro outra função.
+
+function funcaoPai(function() {
+    //código
+})
+
+// Definição 
+function vaiComoParâmetro () {
+    return "Sou um callback"
+}
+
+// --executando
+funcaoPai(vaiComoParâmetro);
+
+    // sou um callback
+
+// operação matemática
+
+let somar = (n1, n2) => n1 + n2;
+
+let subtrair = (n1, n2) => n1 - n2;
+
+let operaçãoMatematica = (n1, n2, operacao) => operacao(n1, n2)
+
+operacaoMatematica(1, 2, somar)
