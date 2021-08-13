@@ -1,0 +1,90 @@
+O multer é uma biblioteca que permite o envio de arquivos para o servidor.
+
+- é um pacote npm que é usado para processar arquivos do lado do servidor.
+- É usado muitas vezes como um middleware
+- Nos permite escolher o local onde os arquivos serão armazenados, além do nome deles
+
+* Instalação 
+    Passo a passo da instalação do multer.
+
+1. Instalamos o multer através do terminal, com o comando:
+    npm install multer
+
+2. Fazendo a requisição do Multer dentro do arquivo de rotas queremos, da seguinte maneira:
+    const multer = require('multer') 
+
+3. Configurando o disco de armazenamento do Multer.
+
+    Com o Multer dentro do arquivo de rotas, o próximo passo é configurar a pasta dentro do 
+    servidor que armazenará os arquivos subidos e, por sua vez, definir o nome que cada arquivo 
+    processado receberá. Dessa forma:
+
+    const storage = multer.diskStorage({
+        destination: function(req, file, cb) {
+            cb(null, './public/images/avatars');
+        },
+        filename: function(req, file, cb) {
+            cb(null, `${Date.now()}_img_${path.extname(file.originalname)}`);
+        }
+    })
+
+4. Definindo a variável que servirá como middleware
+    Você lembra que o Multer é um middleware? Para podermos implementá-lo como tal, temos que
+    armazenar a execução do Multer em uma variável:
+
+    const uploadFile = multer({storage});
+
+    Observe que a função multer() recebe como parâmetro um objeto literal que armazena as 
+    configurações realizadas no passo anterior.
+
+5. Implementando o Multer como middleware
+    na rota em que queremos processar arquivos com Multer, teremos que passá-lo como 
+    middleware, seguindo a estrutura do código abaixo:
+
+    router.post('/register', uploadFile.single('avatar'), usersController.create);
+
+    Perceba que, entre o nome da rota e método do controller, temos a variável que definimos no 
+    passo anterior. E sobre ela, estamos executando o método single(), o qual recebe como 
+    argumento o nome do input que enviará a imagem que desejamos processar.
+
+---- Exercícios 
+
+1. Ao carregar arquivos através do formulário, não apenas precisamos configurar nosso código no 
+    Node, mas também devemos adicionar uma configuração extra na tag form.
+    Dado o seguinte formulário, adicione o atributo enctype com o valor correspondente para 
+    permitir o envio de arquivos.
+   
+    <form action="upload" method="POST" enctype="multipart/form-data" ">
+        //...
+    </form>
+
+///****///*****////**********////////////*************////////////////**********/////////***///////////////
+
+2. No Node, para fazer upload de arquivos, podemos usar ferramentas como multer. 
+    É simplesmente necessário adicioná-lo ao arquivo de rota onde nossa rota ou rotas são 
+    responsáveis ​​pelo upload de arquivos (imagens, documentos, etc.).
+    Neste exemplo, adicionaremos multer ao arquivo de routes user.js para permitir que os usuários 
+    anexem uma imagem durante o registro.
+    Para isso, será necessário requisitar o módulo multer, criar o armazenamento, inicializar a 
+    variável de upload e adicionar a rota que já temos definidas a expressão upload.any() como 
+    segundo parâmetro.
+    Para ver a configuração que a multer precisa para funcionar, consulte a documentação 
+    oficial: https://www.npmjs.com/package/multer#diskstorage.
+
+    const express = require('express');
+    const router = express.Router();
+
+    const multer = require ('multer');
+
+    const storage = multer.diskStorage({
+        destination: function(req, file, cb) {
+            cb(null, '/uploads')
+        },
+        filename: function(req, file, cb) {
+            cb(null, file.filename + ' - ' + Date.now)
+        }
+    })
+
+    const upload = multer({storage: storage})
+
+    router.post('/register', upload.any());

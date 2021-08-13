@@ -1,0 +1,69 @@
+O método POST é, em geral, responsável por enviar dados de formulário ao servidor, quando 
+    queremos que os formulários criem novos conteúdos para a nossa aplicação.
+
+Muito utilizado em logins. São dados que devem ser enviados ao servidor de forma confidenciais.
+
+// Em ./routes/usuarios.js
+router.post('/guardar', usuariosController.guardarUsuarios);
+
+* podemos utilizar o mesmo nome da rota que foi utilizado com o method get.
+
+Cada method tem uma reação diferente.
+
+// Em ./controllers/produtosController.js
+const controller = {
+    criarProduto: (req, res) => {
+        // Retorna a exibição
+    },
+
+    guardarProduto: (req, res) => {
+        // Gera um redirecionamento
+    }
+}
+
+* Rotas que utilizem o método POST, nunca podem ser acessadas a partir da URL ou dos links.
+
+* Como enviamos os dados para o servidor via POST?
+
+    Por meio de formulários:
+        <form action="/usuarios/salvar" method="POST">
+            ...
+        </form>
+
+* app.js:
+    temos duas linhas de códigos que são responsáveis pelas tratativas dos métodos POST.
+    
+    // Requer e executa express
+    const express = require('express');
+    const app = express();
+
+    // 
+    app.use(express.urlencoded({extend: false}));
+    app.use(express.json());
+
+* É como colocar um segurança que encaminha cada visitante para page especifica
+* todos os dados do form são transformados em objeto literal.
+
+Formulário = objeto literal => JSON
+
+* body
+req.body
+Objeto literal
+chave / valor
+
+<input type='text' name='correio'>
+{
+// chave / valor
+    name: '',
+}
+
+* Após coletarmos as informações do corpo do nosso form devemos gerar um redirecionamento. 
+    Para qualquer rota que quisermos.
+
+const controller = {
+    guardarUsuario: (req, res) => {
+        console.log(req.body);
+        // lógica
+        res.redirect('/')
+    }
+}

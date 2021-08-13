@@ -1,0 +1,36 @@
+Para acessar uma rota via PUT ou DELETE é necessário enviar as informações via de um
+    formulário HTML.
+
+- Nem todos os navegadores suportam os métodos acima, para isso devemos adicionar uma etapa
+    para garantir a compatibilidade. Vamos instalar uma dependência do Node que nos permite fazer
+    isso.
+
+    * method-override
+        npm install method-override --save
+
+    const methodOverride = require('method-override');
+    app.use(methodOverride('_method'));
+
+* PUT:
+    Método para enviar informações e atualizar um registro.
+
+    // Em./router/usuarios.js
+        router.get("/:id/editar", usuariosController.editar);
+        router.put('/:id/atualizar', usuariosController.atualizar);
+
+* DELETE:
+    Método que deleta um registro.
+
+    O método DELETE funciona da mesma forma que o PUT
+
+    router.delete('/:id/apagar', usuariosController.apagar)
+
+    <form action="/produtos/editar?_method=DELETE" method="POST">
+        ...
+    </form>
+
+    const controller = {
+        apagar: (req, res) => {
+            // lógica
+        }
+    }

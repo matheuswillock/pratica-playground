@@ -1,0 +1,43 @@
+As requisições de GET são todas aquelas recebidas por URL
+
+* Implementação do código no sistemas de rotas
+
+router.get(rota, callback);
+// Em ./routes/produtos.js
+
+router.get('/', produtosController.mostrarTodos);
+
+router.get('/:id', produtosController.mostrarPorId);
+
+router.get('/criar', produtosController.criarProduto);
+
+* Atendimento dos métodos do controllers, devemos criar um formato padrão:
+
+ - Uma função que irá receber; a solicitação e a resposta como parâmetro irá terminar usando um método para renderizar uma view.
+
+const controller = {
+
+    mostrarTodos: (req, res) => {
+        // Lógica a implementar
+    },
+
+    mostrarPorId: (req, res) => {
+        // Lógica a implementar
+    },
+
+    mostrarCriarProduto: (req, res) => {
+        // Lógica a implementar
+    }
+}
+
+* Também temos a opção de utilizar os parâmetros que são recebidos dentro do endereço da URL.
+
+- Query String 
+    Uma cadeia de texto que contém informação dinâmica.
+    Podem ser usadas no controller como consultas de dados. 
+    Permite configurar a nossa página.
+
+req.query
+
+para acessarmos as query strings
+

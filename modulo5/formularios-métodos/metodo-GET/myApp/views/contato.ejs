@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Olá 
+        <%= 
+            sobrenomeUsuario 
+        %> 
+        
+        <%= 
+            nomeUsuario
+        %> 
+    </h1>
+
+    <h2>Apenas <%= idadeUsuario%> anos.</h2>
+
+    <!--
+        <p>
+            <%= conteudoPage %>
+        </p>
+    -->
+
+    <form action="/confirmarcontato" method="GET">
+        <input type="text" name="nome" id="">
+        <input type="e-mail" name="email" id="">
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
